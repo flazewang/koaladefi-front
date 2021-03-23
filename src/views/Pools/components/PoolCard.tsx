@@ -85,7 +85,7 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
   const accountHasStakedBalance = stakedBalance?.toNumber() > 0
   const needsApproval = !accountHasStakedBalance && !allowance.toNumber() && !isBnbPool
   const isCardActive = isFinished && accountHasStakedBalance
-  const isNotOldFinishedBush = sousId === 66
+  const isOldFinishedBush = sousId === 66
 
   const convertedLimit = new BigNumber(stakingLimit).multipliedBy(new BigNumber(10).pow(tokenDecimals))
   const [onPresentDeposit] = useModal(
@@ -128,7 +128,7 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
           <div style={{ flex: 1 }}>
             <Image src={`/images/tokens/${image || tokenName}.png`} width={64} height={64} alt={tokenName} />
           </div>
-          {!isNotOldFinishedBush && account && harvest && !isOldSyrup && (
+          {!isOldFinishedBush && account && harvest && !isOldSyrup && (
             <HarvestButton
               disabled={!earnings.toNumber() || pendingTx}
               text={pendingTx ? 'Collecting' : 'Harvest'}
@@ -140,7 +140,7 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
             />
           )}
         </div>
-        {!isNotOldFinishedBush && !isOldSyrup ? (
+        {!isOldFinishedBush && !isOldSyrup ? (
           <BalanceAndCompound>
             <Balance value={getBalanceNumber(earnings, tokenDecimals)} isDisabled={isFinished} />
             {sousId === 0 && account && harvest && (
