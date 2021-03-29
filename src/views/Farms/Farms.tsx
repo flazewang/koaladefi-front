@@ -139,7 +139,7 @@ const data = {
     },
     {
       title: 'What will happens to my liquidities if I stay in OLD farms ?',
-      content: `Your liquidities will always be available for withdrawal. Your funds are SAFU. When all liquidities (or a large amount of at least 80%) will be moved from Pancakeswap to ApeSwap, the actual 2 farms using Pancakeswap will be deactivated. You will always be able to find these farms into the inactive tab and withdraw your funds. When these farms will be deactivated, no more $LYPTUS rewards will be distributed (APR = 0%). Read more about the Koala DeFi & ApeSwap partnership in this <a href="https://koaladefi.medium.com/partnership-with-apeswap-finance-c1dd2dd44eee" target="_blank" style="color: orange;font-weight: bold">blog post</a>.`,
+      content: `Your liquidities will always be available for withdrawal. Your funds are SAFU. When all liquidities (or a large amount of at least 80%) will be moved from Pancakeswap to ApeSwap, the actual 2 farms using Pancakeswap will be deactivated. You will always be able to find these farms into the inactive tab and withdraw your funds. When these farms will be deactivated, no more $POTATO rewards will be distributed (APR = 0%). Read more about the Koala DeFi & ApeSwap partnership in this <a href="https://koaladefi.medium.com/partnership-with-apeswap-finance-c1dd2dd44eee" target="_blank" style="color: orange;font-weight: bold">blog post</a>.`,
     },
     {
       title: 'What are the risks of using ApeSawp LP vs PanCakeSwap LP ?',
@@ -215,7 +215,7 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
         // if (!farm.tokenAmount || !farm.lpTotalInQuoteToken || !farm.lpTotalInQuoteToken) {
         //   return farm
         // }
-        const cakeRewardPerBlock = new BigNumber(farm.lyptusPerBlock || 1)
+        const cakeRewardPerBlock = new BigNumber(farm.potatoPerBlock || 1)
           .times(new BigNumber(farm.poolWeight))
           .div(new BigNumber(10).pow(18))
         const cakeRewardPerYear = cakeRewardPerBlock.times(BLOCKS_PER_YEAR)
@@ -392,11 +392,11 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
       <Header>
         <Heading as="h1" size="xxl" color="secondary" mb="24px">
           {tokenMode
-            ? TranslateString(10002, 'Stake tokens to earn LYPTUS')
-            : TranslateString(320, 'Stake LP tokens to earn LYPTUS')}
+            ? TranslateString(10002, 'Stake tokens to earn POTATO')
+            : TranslateString(320, 'Stake LP tokens to earn POTATO')}
         </Heading>
         <Heading size="lg" color="text">
-          {TranslateString(10000, 'Deposit Fee will be used to buyback LYPTUS')}
+          {TranslateString(10000, 'Deposit Fee will be used to buyback POTATO')}
         </Heading>
         <Text>
           <AddressLink
