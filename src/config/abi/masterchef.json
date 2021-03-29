@@ -68,8 +68,8 @@
   {
     "inputs": [
       {
-        "internalType": "contract LyptusToken",
-        "name": "_lyptus",
+        "internalType": "contract PotatoToken",
+        "name": "_potato",
         "type": "address"
       },
       {
@@ -84,7 +84,7 @@
       },
       {
         "internalType": "uint256",
-        "name": "_lyptusPerBlock",
+        "name": "_potatoPerBlock",
         "type": "uint256"
       },
       {
@@ -243,7 +243,7 @@
     "inputs": [
       {
         "internalType": "uint256",
-        "name": "_lyptusPerBlock",
+        "name": "_potatoPerBlock",
         "type": "uint256"
       }
     ],
@@ -373,10 +373,10 @@
   },
   {
     "inputs": [],
-    "name": "lyptus",
+    "name": "potato",
     "outputs": [
       {
-        "internalType": "contract LyptusToken",
+        "internalType": "contract PotatoToken",
         "name": "",
         "type": "address"
       }
@@ -386,7 +386,7 @@
   },
   {
     "inputs": [],
-    "name": "lyptusPerBlock",
+    "name": "potatoPerBlock",
     "outputs": [
       {
         "internalType": "uint256",
@@ -423,7 +423,7 @@
         "type": "address"
       }
     ],
-    "name": "pendingLyptus",
+    "name": "pendingPotato",
     "outputs": [
       {
         "internalType": "uint256",
@@ -461,7 +461,7 @@
       },
       {
         "internalType": "uint256",
-        "name": "accLyptusPerShare",
+        "name": "accPotatoPerShare",
         "type": "uint256"
       },
       {
