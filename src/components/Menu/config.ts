@@ -7,7 +7,7 @@ const config: MenuEntry[] = [
     href: '/',
   },
   {
-    label: 'Trade (New with APE)',
+    label: 'Trade',
     icon: 'TradeIcon',
     items: [
       {
@@ -25,22 +25,6 @@ const config: MenuEntry[] = [
     ],
   },
   {
-    label: 'Trade (Legacy)',
-    icon: 'TradeIcon',
-    items: [
-      {
-        label: 'Exchange',
-        href:
-          'https://swap.koaladefi.finance/#/swap?inputCurrency=0xe9e7cea3dedca5984780bafc599bd69add087d56&outputCurrency=0xba26397cdff25f0d26e815d218ef3c77609ae7f1',
-      },
-      {
-        label: 'Liquidity',
-        href:
-          'https://swap.koaladefi.finance/#/add/0xe9e7cea3dedca5984780bafc599bd69add087d56/0xba26397cdff25f0d26e815d218ef3c77609ae7f1',
-      },
-    ],
-  },
-  {
     label: 'Farms',
     icon: 'FarmIcon',
     href: '/farms',
@@ -51,20 +35,9 @@ const config: MenuEntry[] = [
     href: '/pools',
   },
   {
-    label: 'Bush',
-    icon: 'BushIcon',
-    href: '/bush',
-  },
-  {
-    label: 'Techrate Audit',
-    icon: 'ShieldIcon',
-    href: 'https://koaladefi.finance/files/audit_techrate.pdf',
-    target: '_blank',
-  },
-  {
     label: 'Certik Audit (In-Progress)',
     icon: 'ShieldIcon',
-    href: 'https://certik.org/projects/koaladefi',
+    href: '',
     target: '_blank',
   },
   // {
