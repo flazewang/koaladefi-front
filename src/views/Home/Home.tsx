@@ -95,13 +95,13 @@ const Home: React.FC = () => {
     <>
       <Header>
         <Heading as="h1" size="xl" color="secondary" mb="24px">
-          {TranslateString(578, 'High yields BSC farm brought by the Koalas.')}
+          {TranslateString(578, 'High yields BSC farm for good ole Potatoes!.')}
         </Heading>
         <Heading size="lg" color="text">
           <a href="https://swap.koaladefi.finance/#/swap?inputCurrency=0xe9e7cea3dedca5984780bafc599bd69add087d56&outputCurrency=0xba26397cdff25f0d26e815d218ef3c77609ae7f1">
             <Button variant="subtle">
               {TranslateString(733, 'BUY')}{' '}
-              <img src="/images/farms/lyptus.png" alt="LYPTUS Token" width="70" height="70" />{' '}
+              <img src="/images/farms/lyptus.png" alt="POTATO Token" width="70" height="70" />{' '}
               {TranslateString(734, 'LYPTUS Token Now!')}
             </Button>
           </a>
