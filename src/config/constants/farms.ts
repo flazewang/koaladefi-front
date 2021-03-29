@@ -6,15 +6,15 @@ const farms: FarmConfig[] = [
     pid: 0,
     isOldPsc: true,
     isTokenOnly: true,
-    lpSymbol: 'LYPTUS',
+    lpSymbol: 'POTATO',
     lpAddresses: {
-      97: '',
-      56: '0x78D2616171c75FE9338BA26e0a8099272dd0bE92', // LYPTUS-BUSD LP
+      97: '0xE3E2eBC504e41f8cbB499f62F2284A09dB8d4e85',
+      56: '', // POTATO-BUSD LP
     },
-    tokenSymbol: 'LYPTUS',
+    tokenSymbol: 'POTATO',
     tokenAddresses: {
-      97: '',
-      56: '0xba26397cdff25f0d26e815d218ef3c77609ae7f1',
+      97: '0x383b50caa2c45d9f16cace7fadd035061e3efa25',
+      56: '',
     },
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
@@ -22,15 +22,15 @@ const farms: FarmConfig[] = [
   {
     pid: 9,
     isApe: true,
-    lpSymbol: 'LYPTUS-BUSD LP',
+    lpSymbol: 'POTATO-BUSD LP',
     lpAddresses: {
-      97: '',
+      97: '0xE3E2eBC504e41f8cbB499f62F2284A09dB8d4e85',
       56: '0x744527700ceB261689dF9862FcD0036f5771324C',
     },
-    tokenSymbol: 'LYPTUS',
+    tokenSymbol: 'POTATO',
     tokenAddresses: {
       97: '',
-      56: '0xba26397cdff25f0d26e815d218ef3c77609ae7f1',
+      56: '0x383b50caa2c45d9f16cace7fadd035061e3efa25',
     },
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
@@ -130,55 +130,6 @@ const farms: FarmConfig[] = [
     tokenAddresses: {
       97: '',
       56: '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
-    },
-    quoteTokenSymbol: QuoteToken.BNB,
-    quoteTokenAdresses: contracts.wbnb,
-  },
-  {
-    pid: 8,
-    isPsc: true,
-    isTokenOnly: true,
-    lpSymbol: 'ADA',
-    lpAddresses: {
-      97: '',
-      56: '0xba51d1ab95756ca4eab8737ecd450cd8f05384cf', // ADA-BNB
-    },
-    tokenSymbol: 'ADA',
-    tokenAddresses: {
-      97: '',
-      56: '0x3ee2200efb3400fabb9aacf31297cbdd1d435d47', // ADA
-    },
-    quoteTokenSymbol: QuoteToken.BNB,
-    quoteTokenAdresses: contracts.wbnb,
-  },
-  {
-    pid: 1,
-    isOldPsc: true,
-    lpSymbol: 'LYPTUS-BUSD LP',
-    lpAddresses: {
-      97: '',
-      56: '0x78D2616171c75FE9338BA26e0a8099272dd0bE92',
-    },
-    tokenSymbol: 'LYPTUS',
-    tokenAddresses: {
-      97: '',
-      56: '0xba26397cdff25f0d26e815d218ef3c77609ae7f1',
-    },
-    quoteTokenSymbol: QuoteToken.BUSD,
-    quoteTokenAdresses: contracts.busd,
-  },
-  {
-    pid: 2,
-    isOldPsc: true,
-    lpSymbol: 'LYPTUS-BNB LP',
-    lpAddresses: {
-      97: '',
-      56: '0x6a03c70EC13475928e6238bBefD695AA660A1632',
-    },
-    tokenSymbol: 'LYPTUS',
-    tokenAddresses: {
-      97: '',
-      56: '0xba26397cdff25f0d26e815d218ef3c77609ae7f1',
     },
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
