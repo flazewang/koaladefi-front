@@ -1,6 +1,7 @@
 import { PoolConfig, QuoteToken, PoolCategory } from './types'
 
 const pools: PoolConfig[] = [
+  `
   {
     sousId: 66, // V0
     tokenName: 'BUSD',
@@ -68,5 +69,6 @@ const pools: PoolConfig[] = [
     bushVersion: 1,
   },
 ]
+`
 
 export default pools
